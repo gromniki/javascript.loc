@@ -1,2 +1,2 @@
 ### Секреты JavaScript ниндзя. Книга.
-- http://javascript.loc/ninja-js
+- https://github.com/gromniki/javascript.loc/tree/master/ninja-js
