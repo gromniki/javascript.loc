@@ -11,4 +11,4 @@ for (let n = 0; n < maxCount; n++) {  // многократно выполнит
 console.timeEnd('name operation');  // остановить таймер
 
 
-// 
+//
