@@ -50,3 +50,11 @@ input[type="radio"].visually-hidden {
 .second-list {
   color: red;
 }
+
+.results .pass {
+  color: green;
+}
+
+.results .fail {
+  color: red;
+}
