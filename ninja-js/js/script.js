@@ -1,5 +1,22 @@
 'use strict';
 
+// функция для тесто
+function assert(value, desc) {
+    let li = document.createElement('li');
+    li.className = value ? 'pass' : 'fail';
+    li.appendChild(document.createTextNode(desc));
+    document.querySelector('.js-results').appendChild(li);
+}
+window.onload = function () {  // выполнить тесты, используя утверждения
+    assert(true, 'The test suite is running.');
+    assert(false, 'Fail!');
+};
+
+// функция для вывода сообщений
+function report(text) {
+    assert(true, text);
+}
+
 // Анализ производительности
 console.time('name operation');  // запустить таймер
 let maxCount = 100000;

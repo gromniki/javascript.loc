@@ -5,7 +5,7 @@ function assert(value, desc) {
     let li = document.createElement('li');
     li.className = value ? 'pass' : 'fail';
     li.appendChild(document.createTextNode(desc));
-    document.querySelector('js-results').appendChild(li);
+    document.querySelector('.js-results').appendChild(li);
 }
 window.onload = function () {  // выполнить тесты, используя утверждения
     assert(true, 'The test suite is running.');
