@@ -1,6 +1,6 @@
 'use strict';
 
-// функция для тесто
+// функция для тестов
 function assert(value, desc) {
     let li = document.createElement('li');
     li.className = value ? 'pass' : 'fail';
@@ -126,3 +126,19 @@ assert(useless(getText) === text,  // вызвать бесполезную фу
 
 report('After the calls have been made');
 
+// или еще проще, переписав так
+// let text = 'Domo arigato!';
+
+// function useless(ninjaCallback) {
+//     return ninjaCallback();
+// }
+
+// assert(useless(function () { return text; }) === text,  // определить функцию обратного вызова прямо в аргументе
+//     'The useless function works! ' + text);
+
+// Сортировка путём сравнения
+let values = [0, 3, 2, 5, 7, 4, 7, 8, 1];
+
+values.sort(function (value1, value2) {
+    return value1 - value2;
+});
